@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+
+nav {
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    color: #87423c;
+}
+
+a{
+    font-size: 24px;
+
+}
+
+nav > a {
+    margin-left: 35px;
+    text-decoration: none;
+    color: var(--navyblue);
+}
+
+
+
+
+
+#wrapper{
+    width: 1200px;
+    height: au;
+    margin: auto;
+    /* background-color: beige; */
+}
+
+.logo img {
+    width: 1200px;
+    height: auto;
+}
+
+nav{
+    width: 1200px;
+    height: 50px;
+    line-height: 25px;
+    padding-top: 25px;
+    text-align: right;
+}
+
+nav > a:hover {
+    color: #555;
+}
+
+nav>a{
+    margin-left: 35px;
+    text-decoration: none;
+    color: var(--navyblue);
+}
+
+
+footer{
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+    background-color: #0c243c;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+td.title {
+    font-size: 36px; /* Adjust the font size to your preference */
+    font-weight: bold; /* Make the title text bold */
+    color: #87423c; /* Choose a suitable text color */
+    text-align: center; /* Center-align the title if desired */
+    }
+    
+        .top-align{
+        font-size: 24px;
+        text-align: center;
+        color: #4d1d18;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+    
+    img{
+        width: 600px; /* Adjust the width as needed */
+        height: auto; /* Maintains the aspect ratio */
+    }
+    
+
+    footer {
+        width: 1200px;
+        height: 50px;
+        text-align: center;
+        background-color: #87423c;
+        color: #ffffff;
+        line-height: 50px;
+    }
+    
+    .social-icons a {
+        display: inline-block;
+        margin: 10px; /* Adjust the margin as needed to control spacing */
+    }
+
+    .icon{
+        width: 25px;
+        height: 25px;
+    }

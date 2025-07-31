@@ -1,0 +1,915 @@
+/* Basic Resets */
+body, ul, li, h1, h2, p, a, input, button, label, form, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.nav-logo {
+    height: 50px; 
+    width: auto;
+}
+
+
+.hero-h1-p{
+    color: black;
+    background-color: #f5f0e8;
+
+}
+/* Body */
+body {
+    background-color: #f9f9f9; /* Light Beige */
+    color: #333333; /* Primary Text Dark */
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background-color: #7b2e0f; /* Rust color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar li {
+    margin: 0 10px;
+}
+
+.nav-bar a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav-bar a:hover {
+    background-color: #ffa200; /* Golden Yellow */
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('img/hero.jpg') no-repeat center center/cover;
+    height: 100vh; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.animated-banner {
+    margin-top: 20px;
+    background-color: #ffa200; /* Golden Yellow */
+    padding: 10px;
+}
+
+.main-content{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Main container styling */
+.content-main {
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Section styling */
+  .intro-section,
+  .advantages-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Container within the sections */
+  .container-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Section heading styling */
+  .heading-section {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Benefits list styling */
+  .list-benefits {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .list-benefits li {
+    margin-bottom: 8px;
+    font-size: 1em;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.footer-link,
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-link:hover,
+.social-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* about.html */
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.about h2 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.about p {
+    font-size: 1em;
+    color: #777;
+}
+
+.introduction {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.introduction h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.introduction p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.mission-focus {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.mission, .focus {
+    flex: 1;
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mission h4, .focus h4 {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+
+.mission p, .focus p {
+    font-size: 1em;
+    color: #444;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #7b2e0f; /* Rust for primary text elements */
+}
+
+.about h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #7b2e0f; /* Rust for main heading */
+}
+
+.about h2 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #ffa200; /* Golden Yellow for subheadings */
+}
+
+.about p {
+    font-size: 1em;
+    color: #7b2e0f; /* Rust */
+}
+
+.introduction {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.introduction h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #0156a3; /* Retro Blue */
+}
+
+.introduction p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.mission-focus {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.mission, .focus {
+    flex: 1;
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #4CAF50; /* Green border to emphasize eco-friendliness */
+}
+
+.mission h4, .focus h4 {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+    color: #4CAF50; /* Green for headings */
+}
+
+.mission p, .focus p {
+    font-size: 1em;
+    color: #444;
+}
+
+.projects {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #0156a3; /* Retro Blue */
+}
+
+.projects p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project {
+    flex: 1;
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #E53935; /* Red border for emphasis/urgency */
+}
+
+.project h4 {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+    color: #ffa200; /* Golden Yellow for project titles */
+}
+
+.project p {
+    font-size: 1em;
+    color: #444;
+}
+
+
+
+/* mission.html */
+
+/* Purpose and Mission Section */
+.purpose-section {
+    background-color: #4d4d4d;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.purpose-section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.purpose-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.purpose-section .buttons {
+    margin-top: 20px;
+}
+
+.purpose-section button {
+    margin: 5px;
+    padding: 12px 24px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.purpose-section button:hover {
+    background-color: #e25900;
+}
+
+/* Our Commitment Section */
+.commitment-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.commitment-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.commitment-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.commitment-section .commitment-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.commitment-section .card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.commitment-section .card h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.commitment-section .card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* contact.html */
+
+/* Main contact container styling */
+.contact {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* Text section styling */
+.contact section:first-child {
+    max-width: 45%;
+}
+
+.contact section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Contact form container styling */
+.contact-form {
+    max-width: 60%; /* Increase width for larger form */
+    background: #fff;
+    padding: 30px; /* Increase padding for more content space */
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Slightly increase shadow for emphasis */
+}
+
+
+/* Form element styling */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* login.html */
+
+/* Container Styling */
+.auth-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading Styling */
+.auth-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form Styling */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+.auth-form label {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Input Styling */
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+.auth-form button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff6600; /* Adjust primary color as needed */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+    background-color: #e25900; /* Adjust secondary color as needed */
+}
+
+
+/* RecyclingTechniques.html */
+
+.business-main {
+    padding: 20px;
+}
+
+.business-main h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.business-main p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.business-card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.business-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.business-card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.business-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.business-card.recommended::before {
+    content: 'Recommended';
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ff6600;
+    margin-bottom: 5px;
+}
+
+.business-card.new-arrival::before {
+    content: 'New Arrival';
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #e25900;
+    margin-bottom: 5px;
+}
+
+.image-resize {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    max-width: 200px; /* Optional: set a max-width to ensure consistent scaling */
+    margin: 0 auto; /* Centering the image */
+    display: block; /* Ensures margin centering works */
+}
+
+
+
+
+
+
+
+/* projects.html */
+
+
+
+.recyclable-items {
+    text-align: center;
+    padding: 20px;
+}
+
+.recyclable-items h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.recyclable-items p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.items-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item-card h2 {
+    background-color: #e25900;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px 3px 0 0;
+    margin: 0;
+}
+
+
+
+.item-card p {
+    font-size: 1rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.item-card span {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+/* news.html */
+
+
+/* Main Section Styling */
+.custom-news-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Events Section */
+.custom-events {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-events h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.custom-events p {
+    margin-bottom: 20px;
+}
+
+.custom-view-events {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.custom-view-events:hover {
+    background-color: #e25900;
+}
+
+.custom-event {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.custom-event h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.custom-event p {
+    margin-bottom: 10px;
+}
+
+.custom-event-details {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.custom-event-details .custom-category,
+.custom-event-details .custom-tag,
+.custom-event-details .custom-team {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+/* Newsletter Section */
+.custom-newsletter {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.custom-newsletter p {
+    margin-bottom: 15px;
+}
+
+.custom-newsletter input[type="email"] {
+    padding: 10px;
+    width: calc(100% - 120px);
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.custom-newsletter .custom-subscribe {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-newsletter .custom-subscribe:hover {
+    background-color: #e25900;
+}
+
+
+
+
+/* testimonials.html */
+
+
+/* Styling for the testimonials section */
+.main-testimonials {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Section header */
+.testimonials-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Section description text */
+.testimonials-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Feedback container to hold the cards */
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Individual feedback card */
+.feedback-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+ 
+}
+
+/* Feedback card hover effect */
+.feedback-card:hover {
+    transform: scale(1.05);
+}
+
+/* User icon styling */
+.user-icon {
+    background-color: #e25900;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+}
+
+/* Customer name */
+.feedback-card p strong {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Customer feedback text */
+.feedback-card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Star rating styling */
+.stars {
+    font-size: 1.5rem;
+    color: #ff6600;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .feedback-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,840 @@
+/* index.html  */
+
+/* Apply box-sizing to all elements, reset margin and padding to 0 */
+
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+#wrapper {
+  background-color: #ffffff;
+}
+
+
+/* Styles for the logo */
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* Flexbox for the main content */
+.home {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 204, 2, 0.9);
+}
+
+/* Style the content blocks (articles) */
+.sale-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sale-article {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Media Query for screens below 768px */
+@media (max-width: 768px) {
+  .sale-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sale-article {
+    flex: 1;
+    margin: 20px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+.sale {
+  width: auto;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.salelink {
+  background-color: white;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.salelink:hover {
+  background-color: #ffd136;
+  color: white;
+}
+
+/* Common footer styles */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-col {
+  flex: 1;
+  max-width: 300px;
+  margin: 0 20px;
+}
+
+.footer-col h4 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-col p {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #ffa500;
+}
+
+
+/* product.html */
+
+/* General styles */
+
+.product-content-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px;
+}
+
+.product-image-caption-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 20px; /* Adjust the radius as needed */
+  box-shadow: 0px 0px 10px rgba(255, 204, 2, 0.9); /* Adjust the shadow size and spread as needed */
+}
+
+.product-caption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px;
+}
+
+h2 a:hover {
+  background-color: rgba(255, 204, 2, 0.9);
+  color: #000000;
+}
+
+.product-intro {
+  background-color: rgba(255, 204, 2, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%; /* Use percentage for responsiveness */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Media Query for screens below 768px */
+@media (max-width: 768px) {
+  /* Adjust the header for small screens */
+  .product-content-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .product-image-caption-container img {
+    width: 100%; /* Make the image take full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+  }
+
+  .product-intro {
+    width: 90%; /* Adjust width for smaller screens */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+}
+
+
+
+
+
+
+
+
+h2 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px;
+}
+
+h2 a:hover {
+  background-color: rgba(255, 204, 2, 0.9);
+  color: #000000;
+}
+
+.product-intro {
+  background-color: rgba(255, 204, 2, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%; /* Use percentage for responsiveness */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+
+/* Common footer styles */
+.product-footer {
+  background-color: rgba(255,209,54,255); /* Background color */
+  color: #000000; /* Text color */
+  padding: 50px 0; /* Padding */
+  text-align: center; /* Center-align text */
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.product-footer-container {
+  max-width: 1200px; /* Maximum width */
+  margin: 0 auto; /* Center the container */
+}
+
+.product-footer-row {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Wrap items if necessary */
+  justify-content: center; /* Center-align items */
+}
+
+.product-footer-col {
+  flex: 1; /* Equal width for columns */
+  max-width: 300px; /* Maximum width for columns */
+  margin: 0 20px; /* Margin between columns */
+}
+
+.product-footer-col h4 {
+  margin-bottom: 20px; /* Bottom margin for heading */
+  color: hwb(0 0% 100%); /* Text color for heading */
+}
+
+.product-footer-col p {
+  margin-bottom: 20px; /* Bottom margin for paragraphs */
+}
+
+.product-social-icons {
+  list-style-type: none; /* Remove list style */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.product-social-icons li {
+  display: inline-block; /* Display icons inline */
+  margin-right: 10px; /* Margin between icons */
+}
+
+.product-social-icons li:last-child {
+  margin-right: 0; /* Remove margin for last icon */
+}
+
+.product-social-icons a {
+  color: hsl(0, 0%, 0%); /* Icon color */
+  font-size: 24px; /* Icon size */
+}
+
+/* Hover effect for social icons */
+.product-social-icons a:hover {
+  color: #ffffff; /* Change color on hover */
+}
+
+.product-main-content{
+  background-color: white;
+}
+
+/* man.css and woman.css */
+
+
+
+
+
+
+
+
+/* Apply box-sizing to all elements, reset margin and padding to 0 */
+/* Apply font-family and define custom colors */
+
+.drop-label {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  
+  
+}
+
+.dropdown {
+  display: none; /* Initially hide dropdown content */
+}
+
+.drop-check:checked + .drop-label + .dropdown {
+  display: block; /* Show dropdown when the associated checkbox is checked */
+}
+
+
+
+
+
+.product {
+  
+  text-align: center;
+  border: 1px solid #ddd; /* Lighter border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Increased padding for spacing */
+  background-color: rgba(255, 204, 2, 0.9); /* Light background color */
+  flex-basis: 30%; /* Adjust width as needed */
+  width: calc(50% - 20px);
+  margin: 20px;
+
+}
+
+
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust alignment as needed */
+ 
+  
+}
+
+
+.product img {
+  width: 350px;
+  height: 125px;
+  height: auto;
+  border-radius: 5px; /* Rounded corners for images */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for images */
+}
+
+
+.product p {
+  font-size: 16px;
+  color: #000000; /* Slightly darker text color */
+}
+
+.product button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
+
+
+  
+  h1 {
+    text-align: center;
+  }
+
+
+  @media screen and (max-width: 1295px) {
+    .product {
+      flex-basis: 48%; /* Two products per row */
+      width: calc(50% - 20px);
+    }
+  
+    /* Centering the products */
+    .product-container {
+      justify-content: center; /* Center products horizontally */
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .product {
+      flex-basis: 100%; /* Full width for smaller screens */
+      width: calc(100% - 20px);
+    }
+  
+    .product img {
+      width: 100%; /* Make images fill their containers */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .product-container {
+      flex-direction: column; /* Stack products vertically */
+      align-items: center; /* Center products vertically */
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .product {
+      flex-basis: 100%; /* Full width for smaller screens */
+      width: calc(100% - 20px);
+    }
+  }
+  
+  
+  
+/* service.css */
+
+/* Apply box-sizing to all elements, reset margin and padding to 0 */
+/* Apply font-family and define custom colors */
+
+
+
+
+
+.white {
+  background-color: #ffffff;
+  border-radius: 20px;
+  transition: background-color 0.3s ease; /* Add transition property */
+}
+
+.white:hover {
+  background-color: #ffa500; /* Change background color on hover */
+}
+
+#check {
+  display: none;
+}
+
+
+
+
+
+main {
+  border-radius: 20px;
+  background-color: rgba(255, 204, 2, 0.9);
+}
+
+article {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.white {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+/* Media Query for screens below 768px */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  article {
+    flex: 1;
+    margin: 20px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Button styles */
+button {
+  background-color: #ffffff;
+  color: hsl(0, 0%, 0%);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffa500;
+}
+
+
+/* Common footer styles */
+.site-footer {
+  background-color: #ffffff; /* Background color */
+  color: #000000; /* Text color */
+  padding: 50px 0; /* Padding */
+  text-align: center; /* Center-align text */
+  border-radius: 20px;
+  margin-top: 2px;
+}
+
+.footer-container {
+  max-width: 1200px; /* Maximum width */
+  margin: 0 auto; /* Center the container */
+}
+
+.footer-row {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Wrap items if necessary */
+  justify-content: center; /* Center-align items */
+}
+
+.footer-col {
+  flex: 1; /* Equal width for columns */
+  max-width: 300px; /* Maximum width for columns */
+  margin: 0 20px; /* Margin between columns */
+}
+
+.footer-col h4 {
+  margin-bottom: 20px; /* Bottom margin for heading */
+  color: #000000; /* Text color for heading */
+}
+
+.footer-col p {
+  margin-bottom: 20px; /* Bottom margin for paragraphs */
+}
+
+.social-icons {
+  list-style-type: none; /* Remove list style */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.social-icons li {
+  display: inline-block; /* Display icons inline */
+  margin-right: 10px; /* Margin between icons */
+}
+
+.social-icons li:last-child {
+  margin-right: 0; /* Remove margin for last icon */
+}
+
+.social-icons a {
+  color: #000000; /* Icon color */
+  font-size: 24px; /* Icon size */
+}
+
+/* Hover effect for social icons */
+.social-icons a:hover {
+  color: #ffa500; /* Change color on hover */
+}
+
+/* contact.html */
+
+
+
+/* Additional styles for the contact form */
+form {
+  margin-top: 20px;
+  width: 100%;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form input[type="submit"],
+form textarea {
+  width: calc(100% - 20px); /* Adjusted width to fit the whole page */
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9) /* Example background color */
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+/* login.html */
+
+.login-container {
+ 
+  margin: 50px auto; /* Center the container horizontally */
+  background-color: #f9f9f9; /* Set a background color */
+  padding: 20px; /* Add padding */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-heading {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+.login-input-group {
+  margin-bottom: 20px; /* Add space between input groups */
+}
+
+.login-label {
+  font-weight: bold; /* Make labels bold */
+}
+
+.login-input[type="text"],
+.login-input[type="password"] {
+  width: 100%; /* Set input width to 100% */
+  padding: 10px; /* Add padding */
+  margin-top: 5px; /* Add space above inputs */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 3px; /* Add rounded corners */
+}
+
+.login-button[type="submit"] {
+  width: 100%; /* Set button width to 100% */
+  padding: 10px; /* Add padding */
+  background-color: #ffcc02; /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 3px; /* Add rounded corners */
+  cursor: pointer; /* Add pointer cursor */
+  transition: background-color 0.3s; /* Add transition effect */
+}
+
+.login-button[type="submit"]:hover {
+  background-color: #ffa500; /* Change background color on hover */
+}
+
+
+/* wishlist.html */
+
+/* Main styles */
+.wishlist-main {
+  padding: 20px;
+}
+
+/* Container styles */
+.wishlist-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Item container styles */
+.wishlist-item-container {
+  width: 50%; /* Adjust as needed */
+  padding: 10px;
+}
+
+
+
+/* Item image styles */
+.wishlist-item-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Item title styles */
+.wishlist-item-title {
+  margin-top: 0;
+}
+
+/* Item details styles */
+.wishlist-item-details {
+  margin-bottom: 5px;
+}
+
+/* Remove button styles */
+.wishlist-remove-button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist-remove-button:hover {
+  background-color: #cc0000;
+}
+
+
+
+
+
+.header{
+  margin-bottom: 25px;
+}
+
+.navbar {
+  
+  display: flex; /* Add flex display */
+  justify-content: space-between; /* Add space between items */
+  align-items: center; /* Vertically center items */
+  padding: 10px; /* Add padding for space */
+    z-index: 1000; /* Ensure navbar appears above other elements */
+  
+}
+
+.logoforpages {
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px 20px;
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+}
+
+.sub-menu {
+  display: none;
+  position: relative; /* Change position to absolute */
+  top: 100%; /* Position sub-menu below parent */
+  left: 0;
+  background-color: white;
+}
+
+.sub-menu li {
+  display: block;
+}
+
+.navbar li:hover .sub-menu {
+  display: block;
+}
+
+/* Add your existing CSS styles here */
+
+/* Hamburger icon styles */
+.menu-toggle {
+  display: none; /* Hide by default */
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar ul.main-menu {
+    display: none; /* Hide menu by default on small screens */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: gold;
+  }
+
+  .navbar ul.main-menu li {
+    display: block;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block; /* Display hamburger icon on small screens */
+  }
+
+  .navbar.collapsed ul.main-menu {
+    display: block; /* Show menu when collapsed class is added */
+  }
+}
+
+.collapsed {
+  display: block !important;
+}
+

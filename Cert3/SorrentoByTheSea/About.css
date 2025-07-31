@@ -1,0 +1,208 @@
+/* Common styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    color: #87423c;
+}
+
+a{
+    font-size: 24px;
+
+}
+
+nav > a {
+    margin-left: 35px;
+    text-decoration: none;
+    color: var(--navyblue);
+}
+
+/* Wrapper styles */
+#wrapper {
+    width: 1200px;
+    height: 1600px;
+    margin: auto;
+}
+
+nav {
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+}
+
+nav > a {
+    margin-left: 35px;
+    text-decoration: none;
+    color: var(--navyblue);
+}
+
+/* Logo styles */
+.logo img {
+    width: 1200px;
+    height: auto;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Heading styles */
+h1{
+    color: #87423c;
+    font-size: 36px;
+}
+
+/* Table styles */
+table {
+    width: 1200px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    margin-left: -225px;
+
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    font-size: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th{
+    color: #4d1d18;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* List styles */
+ul {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.left{
+    margin-left: -100px;
+    
+}
+
+.form{
+    margin-top: 20px;
+    margin-left: -600px;
+}
+
+li{
+    font-size: 20px;
+}
+
+/* Style for the entire form */
+#book-now-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+}
+
+/* Style for form labels */
+#book-now-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style for form inputs */
+#book-now-form input[type="text"],
+#book-now-form input[type="email"],
+#book-now-form input[type="date"],
+#book-now-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the "Submit" button */
+#book-now-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #e94d40;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for the "Submit" button */
+#book-now-form input[type="submit"]:hover {
+    background-color: #c73d30;
+}
+
+/* Add your preferred styles here */
+.reviews {
+    margin: 5px;
+    margin-left: 300px;
+    margin-top: -525px;
+    
+}
+
+.review {
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    height: auto;
+    width: 650px;
+}
+
+.review p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.middle {
+    text-align: center;
+}
+
+footer {
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+    background-color: #87423c;
+    color: #ffffff;
+    line-height: 50px;
+    margin: 100px;
+    margin-left: -500px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 10px; /* Adjust the margin as needed to control spacing */
+    
+}
+
+
+
+
+
+
+

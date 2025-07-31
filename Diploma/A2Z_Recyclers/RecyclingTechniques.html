@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Business Recycling Solutions</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar" role="navigation">
+        <img src="img/logo.png" alt="Logo" class="nav-logo">
+        <button class="menu-toggle" aria-expanded="false">&#9776;</button> <!-- Hamburger icon for mobile -->
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="RecyclingTechniques.html">Recycling Techniques</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><div id="clock"></div></li>   
+        </ul>
+    </nav>
+</header>
+  
+
+
+    <main class="business-main">
+        <h1>Business Recycling Solutions</h1>
+        <p>Efficient waste management for businesses</p>
+        <div class="business-card-container">
+            <div class="business-card recommended">
+                <img src="img/RecyclingBins.jpg" alt="" class="image-resize">
+                <h2>Recycling Bins</h2>
+                <p>Multi-compartment Recycling Bins</p>
+                <p>Durable and eco-friendly</p>
+            </div>
+            <div class="business-card new-arrival">
+                <img src="img/PaperShredder.png" alt="" class="image-resize">
+                <h2>Paper Shredder</h2>
+                <p>Industrial Paper Shredder</p>
+                <p>Secure document destruction</p>
+            </div>
+            <div class="business-card e-waste">
+                <img src="img/E-WasteRecycling.png" alt="" class="image-resize">
+                <h2>E-Waste Recycling</h2>
+                <p>IT Equipment Recycling Service</p>
+                <p>Proper disposal of electronics</p>
+            </div>
+            
+        </div>
+    </main>
+
+    <div class="tracker-container">
+      <h2>Recycling Tracker</h2>
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar">0%</div>
+      </div>
+      <p>Recycled: <span id="recycledCount">0</span> / <span id="totalItems">0</span></p>
+      <input type="number" id="totalInput" placeholder="Enter total items" min="1">
+      <button onclick="setTotalItems()">Set Total Items</button><br>
+      <button onclick="addRecycledItem()">Add Recycled Item</button>
+      <button onclick="resetTracker()">Reset</button> <!-- New reset button -->
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <p>© 2024 A2Z Recyclers</p>
+          <p><a href="#" class="footer-link">Privacy Policy</a></p>
+          <div class="social-icons">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+          </div>
+        </div>
+      </footer>
+
+      <script src="js/tracker.js" ></script>
+      <script src="js/clock.js"></script>
+      <script src="js/hamburger.js"></script>
+</body>
+</html>

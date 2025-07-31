@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f0f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4; /* Adjusted line height */
+    color: #333;
+    font-size: 14px; /* Smaller font size */
+}
+
+header {
+    background: linear-gradient(135deg, #6f42c1, #007bff);
+    color: #fff;
+    padding: 0.8em 0; /* Reduced padding */
+    text-align: center;
+}
+
+header img {
+    width: 40px; /* Smaller image size */
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 8px; /* Smaller margin */
+    font-size: 2em; /* Smaller font size */
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 75%; /* Reduced width */
+    margin: 10px auto; /* Smaller margin */
+    padding: 15px; /* Reduced padding */
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Reduced box shadow */
+    border-radius: 8px; /* Smaller border radius */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em; /* Smaller font size */
+}
+
+.cabin {
+    border: 1px solid #ddd;
+    padding: 15px; /* Reduced padding */
+    margin: 15px 0; /* Smaller margin */
+    border-radius: 8px; /* Smaller border radius */
+    background-color: #f9f9f9;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Reduced box shadow */
+}
+
+.cabin h2 {
+    color: #007bff;
+    font-size: 1.2em; /* Smaller font size */
+}
+
+.cabin p {
+    color: #666;
+    font-size: 0.9em; /* Smaller font size */
+}
+
+form {
+    max-width: 500px; /* Reduced max-width */
+    margin: 0 auto;
+    padding: 15px; /* Reduced padding */
+    background: #f9f9f9;
+    border-radius: 8px; /* Smaller border radius */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Reduced box shadow */
+}
+
+form label {
+    display: block;
+    margin: 8px 0 4px; /* Smaller margin */
+    font-weight: bold;
+    font-size: 0.9em; /* Smaller font size */
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 8px; /* Smaller margin */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9em; /* Smaller font size */
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px; /* Reduced padding */
+    font-size: 1em; /* Smaller font size */
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0; /* Reduced padding */
+    background: #007bff;
+    color: #fff;
+    
+
+
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em; /* Smaller font size */
+}
+
+/* Admin Menu Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 8px 0; /* Smaller margin */
+}
+
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em; /* Smaller font size */
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Login Page Styles */
+.login-container {
+    width: 300px; /* Adjust width as needed */
+    margin: 100px auto; /* Center the form */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.login-container form input[type="text"],
+.login-container form input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.login-container form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-container p a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+
+
+.cabin-image {
+    width: 200px;
+    height: auto;
+}
+

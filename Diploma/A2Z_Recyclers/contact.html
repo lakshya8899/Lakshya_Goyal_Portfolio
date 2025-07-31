@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar" role="navigation">
+        <img src="img/logo.png" alt="Logo" class="nav-logo">
+        <button class="menu-toggle" aria-expanded="false">&#9776;</button> <!-- Hamburger icon for mobile -->
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="RecyclingTechniques.html">Recycling Techniques</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><div id="clock"></div></li>   
+        </ul>
+    </nav>
+</header>
+  
+
+
+      <main class="contact">
+        <section>
+            <h1>Contact Us</h1>
+            <p>Reach out to us with any questions or feedback.</p>
+
+        </section>
+        <section class="contact-form">
+           
+            <form>
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+                <label for="item">Item They Plan on Recycling</label>
+                <input type="text" id="item" placeholder="Enter the item you plan to recycle" required>
+
+                <label for="enquiry">Enquiry/Comments</label>
+                <textarea id="enquiry" placeholder="Enter your enquiry or comments" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+          <p>© 2024 A2Z Recyclers</p>
+          <p><a href="#" class="footer-link">Privacy Policy</a></p>
+          <div class="social-icons">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+          </div>
+        </div>
+      </footer>
+      <script src="js/clock.js"></script>
+      <script src="js/hamburger.js"></script>
+</body>
+</html>

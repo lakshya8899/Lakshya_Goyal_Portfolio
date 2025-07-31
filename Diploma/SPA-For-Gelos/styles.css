@@ -1,0 +1,552 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling when clicking links */
+    
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+    margin-top: 40px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(65,71,83,255);
+
+}
+
+.logoforpages {
+    width: 174px;
+    height: 91px;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden by default, shown on mobile */
+}
+
+.main-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-menu li {
+    margin: 0;
+}
+
+.main-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.main-menu a:hover {
+    background-color: #555;
+}
+
+/* Responsive styles for Navbar */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-menu {
+        display: none; /* Hidden by default */
+        position: fixed;
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 20px;
+    }
+
+    .main-menu.show {
+        display: flex;
+    }
+
+    .main-menu a {
+        padding: 15px;
+    }
+}
+
+/* Section styling */
+section {
+    padding-top: 100px; /* Adjust for fixed header */
+    scroll-snap-align: start; /* Snap scrolling */
+}
+
+#section1 {
+    background-color: #f4f4f4;
+}
+
+/* Adjust section heights for responsiveness */
+#section2, #section3, #section4 {
+    padding: 60px 20px;
+}
+
+#section3 {
+    background-color: #d4d4d4;
+}
+
+#section4 {
+    background-color: #c4c4c4;
+}
+
+/* Company Offerings Section */
+#section2 {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+#section2 h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.accordion-item {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.accordion-item:hover {
+    transform: translateY(-10px);
+}
+
+.accordion-header {
+    background-color: #e67e22; /* Match the header color from #section3 */
+    color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.accordion-content {
+    padding: 20px;
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
+    border-top: 2px solid #ddd; /* Subtle separation */
+}
+
+/* Company Values Section */
+#section3 {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+#section3 h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.company-values {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.value-item {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.value-item:hover {
+    transform: translateY(-10px);
+}
+
+.value-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #e67e22;
+}
+
+.value-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.contact-left {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.contact-left h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.contact-left p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact-right .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-right label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-right textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-right .error {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+.btn, .btn1 {
+    position: relative;
+    background-color: #e67e22;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+
+
+#section4 {
+    background-color: #ecf0f1;
+}
+
+
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.red-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsive Carousel */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: auto; /* Maintain aspect ratio on smaller screens */
+    }
+}
+
+
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin: 20px 0;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Case Study Styles */
+.case-study {
+    max-width: 1200px;
+    margin: 100px auto; /* Centers the content and adds spacing from the fixed navbar */
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.case-study h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.case-study p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.arrow-button {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+    background-color: #d35400;
+}
+
+/* Responsive Case Study */
+@media (max-width: 768px) {
+    .case-study {
+        padding: 20px;
+    }
+
+    .case-study h1 {
+        font-size: 28px;
+    }
+
+    .case-study p {
+        font-size: 16px;
+    }
+
+    .arrow-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+.scroll-up-btn {
+    position: fixed;  
+    right: 20px; /* Distance from the right */
+    background-color: #e67e22; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensures the button is on top */
+    transition: background-color 0.3s ease;
+}
+
+.scroll-up-btn:hover {
+    background-color: #d35400; /* Darker shade on hover */
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelos Enterprises</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <button id="scrollUpBtn" class="scroll-up-btn" aria-label="Scroll to top">&#8679;</button>
+    <!-- Hamburger Menu -->
+    
+    <header>
+        <nav class="navbar" role="navigation">
+            <img src="img/Gelos-Logo.jpg" alt="Gelos-Logo" class="logoforpages">
+            <button class="menu-toggle" aria-expanded="false">&#9776;</button> <!-- Hamburger icon -->
+            <ul class="main-menu">
+                <li><a href="#section1">About</a></li>
+                <li><a href="#section2">Offerings</a></li>
+                <li><a href="#section3">Company</a></li>
+                <li><a href="#section4">Contact</a></li>
+            </ul>            
+        </nav>
+    </header>
+    
+      
+
+   <!-- Section 1: Case Studies Slider -->
+   <div class="carousel" id="section1">
+    <div class="carousel-container">
+        <div class="carousel-item">
+            <div class="content">
+                <img src="img/case1.jpg" alt="">
+                <h2 class="slide1h2">Improving operations through Gelos products & services</h2>
+                <br>
+                <a href="case-study-1.html" class="red-button">Read More</a>
+            </div>
+        </div>
+      
+        <div class="carousel-item">
+            <div class="content">
+                <img src="img/case2.jpg" alt="">
+                <h2 class="slide1h2">Solving business problems</h2>
+                <br>
+                <a href="case-study-2.html" class="red-button">Know More</a>
+            </div>
+        </div>
+
+        
+        </div>
+    </div>
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+</div>
+
+      
+    
+    <!-- Section 2: Company Offerings -->
+
+   <!-- Section 2: Company Offerings -->
+<section id="section2" class="offerings">
+    
+    <div class="accordion">
+        <div class="accordion-item">
+            <h3 class="accordion-header">Company Offerings</h3>
+            <div class="accordion-content">
+                <p>To help our clients leverage the state-of-art technologies, we provide a tailored approach to enable change in the digital space. Our prior works include developing mobile applications, website applications, and organisation software development, among other digital capabilities. To know more, <a href="#contact">contact us</a>.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                Cloud Services
+            </h3>
+            <div class="accordion-content">
+                <p>Our Cloud programs include a range of services from full application development platforms to servers, storage, and virtual desktops. We offer the following:</p>
+                <ul>
+                    <li>Software as a service (SaaS)</li>
+                    <li>Platform as a service (PaaS)</li>
+                    <li>Infrastructure as a service (IaaS)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                Artificial Intelligence
+            </h3>
+            <div class="accordion-content">
+                <p>Artificial intelligence services at Gelos can help you drive smart evolution of your workflows, technology, and the entire organisation. Our industry experts help you implement a data-first strategy, augment with third-party sources, and operationalise and accelerate AI integration across your enterprise to generate positive business growth.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+   <!-- Section 3: Company Values -->
+<section id="section3" class="values">
+    <h2>Company Values</h2>
+    <div class="company-values">
+        <div class="value-item">
+            <h3>Integrity</h3>
+            <p>We are committed to our values and protect our company at an organizational level.</p>
+        </div>
+        <div class="value-item">
+            <h3>Inclusivity</h3>
+            <p>We strongly believe in diversity as the core of our growth. Our policies hold zero tolerance towards discrimination.</p>
+        </div>
+        <div class="value-item">
+            <h3>Innovation</h3>
+            <p>Innovation is one of our core values. Our culture imbibes curiosity, technological ingenuity, and adaptability.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Section 4: Contact Us -->
+    <section id="section4" class="contact">
+        <div class="contact-left">
+            <h2>Contact Us</h2>
+            <p>Improving operations through Gelos products & services</p>
+            <p><a href="#" class="btn">Read More</a></p>
+        </div>
+        <div class="contact-right">
+            <form id="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" maxlength="100" pattern="[a-zA-Z\s.]+" title="This field allows only letters, space, and dots for upper and lower case letters.">
+                    <span class="error" id="name-error" style="display:none; color:red;">Please enter a valid name</span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" maxlength="10" pattern="\d+" title="This field allows only numbers.">
+                    <span class="error" id="phone-error" style="display:none; color:red;">Please enter a valid phone number</span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" maxlength="300"></textarea>
+                    <span class="error" id="message-error" style="display:none; color:red;">Please enter a message</span>
+                </div>
+                <button type="submit" class="btn1">Send</button>
+                <span class="form-error" id="form-error" style="color:red; display:none;">Enter the complete details</span>
+            </form>
+        </div>
+    </section>
+    
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="img/Gelos-Logo.jpg" alt="Gelos-Logo">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#section1">About</a></li>
+                <li><a href="#section2">Offerings</a></li>
+                <li><a href="#section3">Company</a></li>
+                <li><a href="#section4">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/GelosEnterprises" target="_blank" aria-label="Facebook">Facebook</a>
+            <a href="https://twitter.com/GelosEnterprises" target="_blank" aria-label="Twitter">Twitter</a>
+            <a href="https://www.linkedin.com/company/gelos-enterprises" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+        <div class="footer-contact">
+            <p>&copy; 2024 Gelos Enterprises. All rights reserved.</p>
+            <p>Email: <a href="mailto:info@gelosenterprises.com">info@gelosenterprises.com</a></p>
+            <p>Phone: +1-800-123-4567</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

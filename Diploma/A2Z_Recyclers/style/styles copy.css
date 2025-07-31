@@ -1,0 +1,301 @@
+/* Basic Resets */
+body, ul, li, h1, h2, p, a, input, button, label, form, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.nav-logo {
+    height: 50px; 
+    width: auto;
+}
+
+
+.hero-h1-p{
+    color: black;
+    background-color: #f5f0e8;
+
+}
+/* Body */
+body {
+    background-color: #f5f0e8; /* Light Beige */
+    color: #333333; /* Primary Text Dark */
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background-color: #7b2e0f; /* Rust color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-bar li {
+    margin: 0 10px;
+}
+
+.nav-bar a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav-bar a:hover {
+    background-color: #ffa200; /* Golden Yellow */
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('img/hero.jpg') no-repeat center center/cover;
+    height: 100vh; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.animated-banner {
+    margin-top: 20px;
+    background-color: #ffa200; /* Golden Yellow */
+    padding: 10px;
+}
+
+.main-content, .form-container, .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.introduction p,
+.benefits-list {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.benefits-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.benefits-list li {
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-form {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.footer-link,
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-link:hover,
+.social-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* about.html */
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+.about {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.about h2 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.about p {
+    font-size: 1em;
+    color: #777;
+}
+
+.introduction {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.introduction h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.introduction p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.mission-focus {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.mission, .focus {
+    flex: 1;
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mission h4, .focus h4 {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+
+.mission p, .focus p {
+    font-size: 1em;
+    color: #444;
+}
+
+.projects {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.projects p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project {
+    flex: 1;
+    padding: 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h4 {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+
+.project p {
+    font-size: 1em;
+    color: #444;
+}
+
+
+
+
